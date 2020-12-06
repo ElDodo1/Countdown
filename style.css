@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("./imgs/annie-spratt-zh7GEuORbUw-unsplash.jpg");
+  background: url("./imgs/annie-spratt-zh7GEuORbUw-unsplash-min.jpg");
 }
 .countdown-container {
   padding-top: 17rem;
