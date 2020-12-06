@@ -9,6 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   background: url("./imgs/annie-spratt-zh7GEuORbUw-unsplash-min.jpg");
+  background-position: center;
 }
 .countdown-container {
   padding-top: 17rem;
