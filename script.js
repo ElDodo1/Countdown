@@ -37,6 +37,7 @@ function createChristmasTree() {
 function createSnow () {
     const snow = document.createElement('span');
     snow.classList.add('snow');
+    randomSnowSize(snow);
     snow.style.left = Math.random() * 100 + 'vw';
     snow.style.animationDuration = Math.random()* 2 + 1;
     document.body.appendChild(snow);
@@ -44,6 +45,11 @@ function createSnow () {
     setTimeout(()=> {
         snow.remove();
     }, 3100);
+}
+function randomSnowSize(snow) {
+    randomSize = Math.random()*28;
+    snow.style.width = randomSize + 10 + 'px';
+    snow.style.height = randomSize + 10 + 'px';
 }
 // Execute countdown timer every second
 setInterval(() => {
