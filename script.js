@@ -23,7 +23,7 @@ function formatTime(timeLeft) {
 }
 function createChristmasTree() {
     const christmasTree = document.createElement('span');
-    christmasTree.classList.add('snowflake');
+    christmasTree.classList.add('tree');
     christmasTree.innerText='🎄';
     christmasTree.style.left = Math.random() * 100 + 'vw';
     christmasTree.style.animationDuration = Math.random() * 3 + 1;
@@ -34,14 +34,25 @@ function createChristmasTree() {
         christmasTree.remove();
     }, 4000);
 }
+function createSnow () {
+    const snow = document.createElement('span');
+    snow.classList.add('snow');
+    snow.style.left = Math.random() * 100 + 'vw';
+    snow.style.animationDuration = Math.random()* 2 + 1;
+    document.body.appendChild(snow);
+
+    setTimeout(()=> {
+        snow.remove();
+    }, 3100);
+}
 // Execute countdown timer every second
 setInterval(() => {
     timeLeft();
-
 }, 1000);
 
-// Generate a new tree every .6 seconds
+// Generate a new tree and snow every .6 seconds
 setInterval(() => {
     createChristmasTree();
+    createSnow();
 }, 600);
 

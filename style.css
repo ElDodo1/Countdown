@@ -32,12 +32,22 @@ body {
   font-weight: bold;
   color: white;
 }
-.snowflake {
+.tree {
   position: fixed;
   top: -1vh;
   transform: translateY(0);
   animation: fall 4s linear forwards;
   font-size: 2rem;
+}
+.snow {
+  position: fixed;
+  top: -1vh;
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
 }
 .countdown-title {
   color: white;
